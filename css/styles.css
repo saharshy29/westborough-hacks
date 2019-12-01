@@ -1,0 +1,105 @@
+:root {
+  --color--white: #ffffff;
+  --color--black: #212121;
+  --color--one: #ffbc42;
+  --color--two: #2a9d8f;
+  --color--three: #0197f6;
+  --color--four: #266dd3;
+  --color--five: #727e7f;
+}
+
+@font-face {
+  font-family: 'beynoregular';
+  src: url('beyno_copy-webfont.woff2') format('woff2'),
+       url('beyno_copy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.5;
+  color: var(--color--white);
+}
+
+header {
+  width: 100vw;
+  height: 70vh;
+  background-color: var(--color--one);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+h1 {
+  /* font-family: 'beynoregular'; */
+  font-size: 4em;
+}
+
+.btn:link,
+.btn:visited,
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative; /* So that the animation will work properly */
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+.btn-white::after{
+    background-color: #fff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
