@@ -9,12 +9,11 @@
 }
 
 @font-face {
-  font-family: 'beynoregular';
-  src: url('beyno_copy-webfont.woff2') format('woff2'),
-       url('beyno_copy-webfont.woff') format('woff');
+  font-family: "beynoregular";
+  src: url("beyno_copy-webfont.woff2") format("woff2"),
+    url("beyno_copy-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 * {
@@ -40,7 +39,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  padding: 3em;
+  padding: 4em;
 }
 
 .logo-box {
@@ -55,63 +54,65 @@ header {
 
 h1 {
   /* font-family: 'beynoregular'; */
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .btn:link,
 .btn:visited,
-.btn{
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 100px;
-    transition: all 0.2s;
-    position: relative; /* So that the animation will work properly */
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative; /* So that the animation will work properly */
 }
 
-.btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn:active{
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-white{
-    background-color: #fff;
-    color: #777;
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
 
-.btn::after{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.2s;
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s;
 }
 
-.btn-white::after{
-    background-color: #fff;
+.btn-white::after {
+  background-color: #fff;
 }
 
-.btn:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
-.content {
+.about {
   margin: 5em;
   padding: 5em;
   padding-top: 0;
   color: var(--color--black);
   overflow: hidden;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .about--section {
@@ -160,4 +161,49 @@ hr {
   border-width: 3px 0 0;
 
   margin-bottom: 1em;
+}
+
+.FAQs {
+  width: 100vw;
+  background-color: var(--color--one);
+  padding: 2em 10em;
+}
+
+.FAQ .container {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+}
+
+/* ----------
+Media Queries
+---------- */
+
+@media (max-width: 75rem) {
+  .about--section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about--section:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .image {
+    margin-top: 1.5em;
+  }
+}
+
+@media (max-width: 64rem) {
+  .about {
+    margin: inherit auto;
+    text-align: center;
+    margin: 5em 0.75em;
+    padding: 0.75em;
+    padding-top: 0;
+  }
+
+  .image {
+    max-height: 100%;
+    max-width: auto;
+  }
 }
