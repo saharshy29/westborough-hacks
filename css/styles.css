@@ -154,6 +154,10 @@ h2 {
   /* margin-bottom: 20px; */
 }
 
+h3 {
+  font-size: 1.5em;
+}
+
 hr {
   border-color: var(--color--three);
   border-image: none;
@@ -163,15 +167,28 @@ hr {
   margin-bottom: 1em;
 }
 
-.FAQs {
+section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.faqs {
   width: 100vw;
   background-color: var(--color--one);
   padding: 2em 10em;
 }
 
-.FAQ .container {
+.faqs .container {
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+.faq {
+  width: 90%;
 }
 
 /* ----------
