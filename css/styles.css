@@ -54,7 +54,7 @@ header {
 
 h1 {
   font-family: "beynoregular";
-  font-size: 3em;
+  font-size: 5em;
 }
 
 .btn:link,
@@ -249,6 +249,10 @@ Media Queries
 }
 
 @media (max-width: 64rem) {
+  h1 {
+    font-size: 3em;
+  }
+
   .about {
     margin: inherit auto;
     text-align: center;
