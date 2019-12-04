@@ -53,7 +53,7 @@ header {
 }
 
 h1 {
-  font-family: 'beynoregular';
+  font-family: "beynoregular";
   font-size: 3em;
 }
 
@@ -197,7 +197,33 @@ section {
 
 .leaders {
   display: flex;
+  padding: 2em 10em;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.leader {
+  display: flex;
+  color: var(--color--grey);
+}
+
+.leader img {
+  width: 5em;
+  height: 5em;
+
+  margin-right: 1em;
+
+  border-radius: 100%;
+}
+
+.leader-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.foot
 
 /* ----------
 Media Queries
@@ -215,6 +241,10 @@ Media Queries
 
   .image {
     margin-top: 1.5em;
+  }
+
+  .leaders {
+    flex-direction: column;
   }
 }
 
@@ -239,7 +269,7 @@ Media Queries
   .faqs .container {
     grid-template-columns: 1fr;
   }
-  
+
   .faq {
     width: 100%;
   }
