@@ -2,7 +2,7 @@
   --color--white: #ffffff;
   --color--grey: #757575;
   --color--four: #51ce4c;
-  --color--one: #383c38
+  --color--one: #383c38;
 }
 @font-face {
   font-family: beynoregular;
@@ -176,6 +176,9 @@ a:visited {
   margin: 0 0.5em;
 }
 @media (max-width: 75rem) {
+  h1 {
+    font-size: 3em;
+  }
   .about--section {
     display: flex;
     flex-direction: column;
@@ -198,7 +201,7 @@ a:visited {
 }
 @media (max-width: 64rem) {
   h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .about {
     margin: inherit auto;
