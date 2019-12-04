@@ -22,8 +22,6 @@ body {
   font-size: 1.25em;
   line-height: 1.5;
   color: var(--color--white);
-
-  overflow: hidden;
 }
 header {
   width: 100vw;
