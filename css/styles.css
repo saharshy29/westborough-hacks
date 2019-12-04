@@ -175,6 +175,9 @@ a:visited {
   color: rgb(var(--color--white));
   margin: 0 0.5em;
 }
+.grey {
+  color: var(--color--grey);
+}
 @media (max-width: 75rem) {
   h1 {
     font-size: 3em;
