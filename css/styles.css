@@ -1,11 +1,8 @@
 :root {
   --color--white: #ffffff;
   --color--grey: #757575;
-  --color--one: #8FC93A;
-  --color--two: #2a9d8f;
-  --color--three: #0197f6;
-  --color--four: #266dd3;
-  --color--five: #727e7f;
+  --color--four: #51ce4c;
+  --color--one: #383c38
 }
 @font-face {
   font-family: beynoregular;
@@ -108,7 +105,7 @@ h3 {
   font-size: 1.5em;
 }
 hr {
-  border-color: var(--color--three);
+  border-color: var(--color--one);
   border-image: none;
   border-style: solid none none;
   border-width: 3px 0 0;
