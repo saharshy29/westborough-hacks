@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "beynoregular";
-  src: url("beyno_copy-webfont.woff2") format("woff2"),
-    url("beyno_copy-webfont.woff") format("woff");
+  src: url("../fonts/beyno_copy-webfont.woff2") format("woff2"),
+    url("../fonts/beyno_copy-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -53,7 +53,7 @@ header {
 }
 
 h1 {
-  /* font-family: 'beynoregular'; */
+  font-family: 'beynoregular';
   font-size: 3em;
 }
 
