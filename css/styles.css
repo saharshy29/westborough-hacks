@@ -1,8 +1,8 @@
 :root {
   --color--white: #ffffff;
   --color--grey: #757575;
-  --color--four: #51ce4c;
-  --color--one: #383c38;
+  --color--primary: #383c38;
+  --color--secondary: #51ce4c;
 }
 @font-face {
   font-family: beynoregular;
@@ -26,7 +26,7 @@ body {
 header {
   width: 100vw;
   height: 70vh;
-  background-color: var(--color--one);
+  background-color: var(--color--primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,13 +106,13 @@ h2 {
   font-weight: 700;
   font-size: 2em;
   line-height: 1.5;
-  color: var(--color--four);
+  color: var(--color--secondary);
 }
 h3 {
   font-size: 1.5em;
 }
 hr {
-  border-color: var(--color--one);
+  border-color: var(--color--primary);
   border-image: none;
   border-style: solid none none;
   border-width: 3px 0 0;
@@ -124,7 +124,7 @@ section h2 {
 }
 .faqs {
   width: 100vw;
-  background-color: var(--color--one);
+  background-color: var(--color--primary);
   padding: 4em 10em;
 }
 .faqs .container {
@@ -164,7 +164,7 @@ section {
 }
 footer {
   width: 100vw;
-  background-color: var(--color--one);
+  background-color: var(--color--primary);
   text-align: center;
   padding: 2em 0;
 }
