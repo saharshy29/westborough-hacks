@@ -46,8 +46,13 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.text-box .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 h1 {
-  font-family: beynoregular;
+  /* font-family: beynoregular; */
   font-size: 5em;
 }
 .btn {
@@ -57,12 +62,13 @@ h1 {
   background-color: var(--color--white);
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
-  border-radius: 100px;
+  padding: 8px 20px;
+  border-radius: 50px;
 }
 
 .about {
   margin: 5em;
+  margin-top: 1.5em;
   padding: 5em;
   padding-top: 0;
   color: var(--color--black);
@@ -180,8 +186,11 @@ a:visited {
   color: var(--color--grey);
 }
 @media (max-width: 75rem) {
-  h1 {
-    font-size: 3em;
+  .header {
+    text-align: center;
+  }
+  .faq {
+    text-align: center;
   }
   .about--section {
     display: flex;
@@ -205,12 +214,13 @@ a:visited {
 }
 @media (max-width: 64rem) {
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
   .about {
     margin: inherit auto;
     text-align: center;
     margin: 5em 0.75em;
+    margin-top: 2.5em;
     padding: 0.75em;
     padding-top: 0;
   }
