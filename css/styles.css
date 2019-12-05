@@ -217,6 +217,9 @@ a:visited {
   h1 {
     font-size: 3em;
   }
+  .header h3 {
+    font-size: 1em;
+  }
   .about {
     margin: inherit auto;
     text-align: center;
