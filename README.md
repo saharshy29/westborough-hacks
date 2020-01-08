@@ -1,2 +1,2 @@
 # westborough-hacks
-Westborough Hack's Official Website
+The Official Website of Westborough Hacks!
