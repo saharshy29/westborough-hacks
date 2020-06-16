@@ -1,0 +1,24 @@
+{
+  "name": "westborough-hacks",
+  "version": "1.0.0",
+  "description": "Official Site for Westborough Hacks",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westborough-hack-club/westborough-hacks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/westborough-hack-club/westborough-hacks/issues"
+  },
+  "homepage": "https://github.com/westborough-hack-club/westborough-hacks#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "smooth-scrollbar": "^8.5.2"
+  }
+}
